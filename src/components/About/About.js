@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-import { Grid, Typography, Collapse } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
 import { styles } from "./styles";
@@ -7,17 +6,10 @@ import { styles } from "./styles";
 const useStyles = makeStyles(styles);
 
 const About = ({ header, text }) => {
-  const [animate, setAnimate] = useState(false);
-
-  useEffect(() => {
-    setAnimate(true);
-  }, []);
-
   const classes = useStyles();
 
   return (
     <Grid className={classes.container} alignItems="center" container>
-      {/* <img src={BgImage} alt={"BACKGROUND"} className={classes.image} /> */}
       <Grid
         item
         container
@@ -26,14 +18,12 @@ const About = ({ header, text }) => {
         className={classes.innerContainer}
       >
         <Grid item xs={7}>
-          <Collapse in={animate}>
-            <Typography
-              className={`${classes.fullWidth} ${classes.underline}`}
-              variant="h1"
-            >
-              {header}
-            </Typography>
-          </Collapse>
+          <Typography
+            className={`${classes.fullWidth} ${classes.underline}`}
+            variant="h1"
+          >
+            {header}
+          </Typography>
         </Grid>
 
         <Grid items xs={6}>

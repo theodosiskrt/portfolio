@@ -1,24 +1,25 @@
 import BgImage from "../../images/Home2.jpg";
 
-export const styles = () => ({
+export const styles = {
   container: {
     scrollSnapAlign: "start",
-    height: "100vh",
     backgroundImage: `url(${BgImage})`,
     backgroundSize: "cover",
-    backgroundPosition: "bottom",
     backgroundRepeat: "no-repeat",
-    maxWidth: `100%`,
-    // background: ({ pageIndex }) =>
-    //   `linear-gradient(${
-    //     pageIndex % 2 === 0 ? "0" : "180"
-    //   }deg, rgba(75,0,130,1) 0%, rgba(128,128,128,1) 80%)`,
     color: "#fff",
+
+    backgroundPosition: "top",
+    height: "100vh",
+    "@media only screen and (min-width: 1000px)": {
+      backgroundPosition: "bottom",
+    },
   },
   fullWidth: { width: "100%", textAlign: "center" },
+  header: { fontSize: { xs: "2em", sm: "3em", md: "3.8em", lg: "5em" } },
+  subheader: { fontSize: { xs: "1.5em", sm: "2.5em", md: "3.2em", lg: "4em" } },
   innerContainer: {
     padding: "2em 0",
     backgroundColor: "rgba(150,150,150,0.1)",
     backdropFilter: "blur(5px)",
   },
-});
+};
