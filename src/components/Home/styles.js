@@ -2,7 +2,7 @@ import BgImage from "../../images/Home2.jpg";
 
 export const styles = {
   container: {
-    scrollSnapAlign: "start",
+    scrollSnapAlign: "end",
     backgroundImage: `url(${BgImage})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",

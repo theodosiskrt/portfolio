@@ -3,8 +3,17 @@ import { makeStyles } from "@mui/styles";
 
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
+import Background from "./components/Background/Background";
 import { styles } from "./styles";
-import { name, role, aboutTitle } from "./textConstants";
+import {
+  name,
+  role,
+  aboutTitle,
+  backgroundTitle,
+  backgroundText,
+  getAboutText,
+  skillsTitle,
+} from "./textConstants";
 
 const useStyles = makeStyles(styles);
 
@@ -13,7 +22,12 @@ const App = () => {
   return (
     <Grid container className={classes.container}>
       <Home header={name} subheader={role} />
-      <About header={aboutTitle} />
+      <About header={aboutTitle} getSecondaryText={getAboutText} />
+      <Background
+        header={backgroundTitle}
+        secondaryText={backgroundText}
+        listTitle={skillsTitle}
+      />
     </Grid>
   );
 };
