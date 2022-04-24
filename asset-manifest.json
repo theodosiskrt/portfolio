@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.js": "/portfolio/static/js/main.c7ce7462.js",
+    "static/media/Contact.png": "/portfolio/static/media/Contact.eb80dde7daa33e38c4d8.png",
+    "static/media/Home2.jpg": "/portfolio/static/media/Home2.696a59a46384ff640a65.jpg",
+    "static/media/About2.jpg": "/portfolio/static/media/About2.b234fc310c41f02f439b.jpg",
+    "static/media/Background.jpeg": "/portfolio/static/media/Background.9700e4ccb3c12df0cfec.jpeg",
+    "static/media/Projects.jpg": "/portfolio/static/media/Projects.fd3dc0b525fc1cf0c41a.jpg",
+    "static/media/TheodosisKarataris.pdf": "/portfolio/static/media/TheodosisKarataris.5838ba140953c4fb2575.pdf",
+    "index.html": "/portfolio/index.html",
+    "main.c7ce7462.js.map": "/portfolio/static/js/main.c7ce7462.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.c7ce7462.js"
+  ]
+}
