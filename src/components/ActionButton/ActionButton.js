@@ -7,7 +7,7 @@ const ActionButton = ({ customStyles, href, text }) => {
       <Button
         variant="contained"
         size="large"
-        sx={{ ...customStyles, ...staticStyles }}
+        sx={{ ...staticStyles, ...customStyles }}
       >
         {text}
       </Button>

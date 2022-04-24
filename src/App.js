@@ -5,6 +5,7 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Background from "./components/Background/Background";
 import Projects from "./components/Projects/Projects";
+import BlankPage from "./components/BlankPage/BlankPage";
 import { styles } from "./styles";
 import {
   name,
@@ -15,7 +16,9 @@ import {
   getAboutText,
   skillsTitle,
   projectsTitle,
+  contactTitle,
 } from "./textConstants";
+import Contact from "./components/Contact/Contact";
 
 const useStyles = makeStyles(styles);
 
@@ -31,6 +34,8 @@ const App = () => {
         listTitle={skillsTitle}
       />
       <Projects header={projectsTitle} />
+      <Contact header={contactTitle} />
+      <BlankPage />
     </Grid>
   );
 };

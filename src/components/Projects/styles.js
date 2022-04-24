@@ -2,12 +2,14 @@ import BgImage from "../../images/Projects.jpg";
 
 export const styles = {
   container: {
-    scrollSnapAlign: "end",
+    scrollSnapAlign: "start",
+    scrollBehavior: "smooth",
     background: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${BgImage})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     height: "100vh",
+    height: "calc(var(--vh, 1vh) * 100)",
     color: "#f0f0f0",
   },
   header: {
