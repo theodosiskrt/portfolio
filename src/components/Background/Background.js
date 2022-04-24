@@ -13,7 +13,7 @@ const Background = ({ header, secondaryText, listTitle }) => {
       direction="column"
       alignItems="center"
     >
-      <Grid item xs={3} mt={{ xs: 10, sm: 20 }}>
+      <Grid item xs={3} mt={{ xs: 10, sm: 15 }}>
         <Typography sx={styles.header} variant="h1" align="center">
           {header}
         </Typography>
@@ -45,7 +45,7 @@ const Background = ({ header, secondaryText, listTitle }) => {
           </Typography>
           <List>
             {skills.map((skill) => (
-              <ListItem key={skill} sx={styles.noPadding}>
+              <ListItem key={skill} disablePadding>
                 <FiberManualRecordIcon sx={styles.listIcon} />
                 <Typography variant="body2" sx={styles.listItemText}>
                   {skill}
