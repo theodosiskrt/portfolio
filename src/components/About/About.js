@@ -1,7 +1,9 @@
 import { Grid, Typography } from "@mui/material";
+import ActionButton from "../ActionButton/ActionButton";
+import CV from "../../CV/TheodosisKarataris.pdf";
 
-import DownloadCV from "./DownloadCV";
 import { styles } from "./styles";
+import { downloadCVButtonText } from "../../textConstants";
 
 const About = ({ header, getSecondaryText }) => (
   <Grid
@@ -23,7 +25,11 @@ const About = ({ header, getSecondaryText }) => (
       </Typography>
     </Grid>
     <Grid container item xs={2} alignItems="center" justifyContent="center">
-      <DownloadCV styles={styles.button} />
+      <ActionButton
+        customStyles={styles.button}
+        text={downloadCVButtonText}
+        href={CV}
+      />
     </Grid>
   </Grid>
 );

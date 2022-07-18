@@ -4,6 +4,7 @@ import { makeStyles } from "@mui/styles";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Background from "./components/Background/Background";
+import Projects from "./components/Projects/Projects";
 import { styles } from "./styles";
 import {
   name,
@@ -13,6 +14,7 @@ import {
   backgroundText,
   getAboutText,
   skillsTitle,
+  projectsTitle,
 } from "./textConstants";
 
 const useStyles = makeStyles(styles);
@@ -28,6 +30,7 @@ const App = () => {
         secondaryText={backgroundText}
         listTitle={skillsTitle}
       />
+      <Projects header={projectsTitle} />
     </Grid>
   );
 };
