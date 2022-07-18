@@ -8,10 +8,10 @@ export const styles = {
     backgroundRepeat: "no-repeat",
     color: "#fff",
 
-    backgroundPosition: "top",
+    backgroundPosition: "bottom",
     height: "100vh",
     "@media only screen and (min-width: 1000px)": {
-      backgroundPosition: "bottom",
+      backgroundPosition: "top",
     },
   },
   fullWidth: { width: "100%", textAlign: "center" },
