@@ -14,6 +14,9 @@ export const styles = {
   header: {
     fontSize: { xs: "3.75em", sm: "5em" },
   },
+  aboutText: {
+    fontSize: { xs: "1em", sm: "1.3em" },
+  },
   button: {
     padding: "1em 2em",
   },

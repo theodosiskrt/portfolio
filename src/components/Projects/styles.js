@@ -32,7 +32,7 @@ export const styles = {
     padding: { xs: "0.5em 1em 0.5em 0.5em", lg: "1em" },
   },
   responsivePadding: {
-    padding: { xs: "0.8em 0em", lg: "0.8em" },
+    padding: { xs: "0.4em 0em", lg: "0.8em" },
   },
   projectButton: (selected) => ({
     backgroundColor: `rgba(255,255,255, ${selected ? "0.2" : "0"})`,

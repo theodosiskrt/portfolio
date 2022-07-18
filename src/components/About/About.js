@@ -20,7 +20,7 @@ const About = ({ header, getSecondaryText }) => (
       </Typography>
     </Grid>
     <Grid item xs={3}>
-      <Typography align="center" variant="h6">
+      <Typography align="center" variant="h6" sx={styles.aboutText}>
         {getSecondaryText()}
       </Typography>
     </Grid>

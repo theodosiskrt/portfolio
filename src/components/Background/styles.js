@@ -27,14 +27,14 @@ export const styles = {
   },
   skillsTitle: { fontSize: { xs: "1.5em", sm: "2em" } },
   sectionText: {
-    fontSize: { xs: "0.75em", sm: "1em" },
+    fontSize: { xs: "0.6em", sm: "0.75em", md: "1em" },
     padding: { xs: "0.5em 1em 0.5em 0.5em", lg: "1em" },
   },
   listIcon: {
-    fontSize: { xs: "0.6em", sm: "0.8em" },
+    fontSize: { xs: "0.5em", sm: "0.6em", md: "0.8em" },
     marginRight: "0.5em",
   },
   listItemText: {
-    fontSize: { xs: "0.75em", sm: "1em" },
+    fontSize: { xs: "0.6em", sm: "0.75em", md: "1em" },
   },
 };
