@@ -4,26 +4,26 @@ import { styles } from "./styles";
 
 const useStyles = makeStyles(styles);
 
-const Home = () => {
-  const classes = useStyles();
+const Page = ({ header, subheader, text, pageIndex }) => {
+  const classes = useStyles({ pageIndex });
 
   return (
     <Grid
-      className={classes.homeAlign}
+      className={classes.container}
       alignItems="center"
       justifyContent="center"
       container
     >
       <Grid item>
         <Typography className={classes.fullWidth} variant="h1">
-          Theodosis Karataris
+          {header}
         </Typography>
         <Typography className={classes.fullWidth} variant="h3">
-          Front-End Developer
+          {subheader}
         </Typography>
       </Grid>
     </Grid>
   );
 };
 
-export default Home;
+export default Page;
