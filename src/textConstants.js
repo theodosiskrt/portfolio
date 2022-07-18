@@ -72,6 +72,10 @@ export const projects = [
     url: "https://github.com/theodosiskrt/social-media-backend/tree/main/social-media-backend",
   },
 ];
-
 export const projectButtonText = "Source Code";
 export const notSelProjectDesc = "Select a project to view its details";
+
+// Contact
+export const contactTitle = "Contact";
+export const sendEmailText = "Email Me!";
+export const sendEmailHref = "mailto: karataristheodosis@gmail.com";

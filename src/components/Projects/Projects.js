@@ -25,7 +25,7 @@ const Projects = ({ header }) => {
       direction="column"
       alignItems="center"
     >
-      <Grid item xs={3} mt={{ xs: 10, sm: 15 }}>
+      <Grid item xs={3} mt={{ xs: 7, sm: 15 }}>
         <Typography sx={styles.header} variant="h1" align="center">
           {header}
         </Typography>

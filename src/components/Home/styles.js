@@ -2,7 +2,7 @@ import BgImage from "../../images/Home2.jpg";
 
 export const styles = {
   container: {
-    scrollSnapAlign: "end",
+    scrollSnapAlign: "start",
     backgroundImage: `url(${BgImage})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
@@ -10,6 +10,7 @@ export const styles = {
 
     backgroundPosition: "bottom",
     height: "100vh",
+    height: "calc(var(--vh, 1vh) * 100)",
     "@media only screen and (min-width: 1000px)": {
       backgroundPosition: "top",
     },
