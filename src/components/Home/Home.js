@@ -6,14 +6,14 @@ import { styles } from "./styles";
 
 const useStyles = makeStyles(styles);
 
-const Home = ({ header, subheader, text, pageIndex }) => {
+const Home = ({ header, subheader, text }) => {
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
     setAnimate(true);
   }, []);
 
-  const classes = useStyles({ pageIndex });
+  const classes = useStyles();
 
   return (
     <Grid className={classes.container} alignItems="center" container>
@@ -25,9 +25,12 @@ const Home = ({ header, subheader, text, pageIndex }) => {
         className={classes.innerContainer}
       >
         {header && (
-          <Grid item xs={7}>
+          <Grid item xs={12}>
             <Collapse in={animate} timeout={2250}>
-              <Typography className={classes.fullWidth} variant="h1">
+              <Typography
+                sx={{ ...styles.header, ...styles.fullWidth }}
+                variant="h1"
+              >
                 {header}
               </Typography>
             </Collapse>
@@ -35,19 +38,15 @@ const Home = ({ header, subheader, text, pageIndex }) => {
         )}
 
         {subheader && (
-          <Grid item xs={7}>
+          <Grid item xs={12}>
             <Collapse in={animate} timeout={2250}>
-              <Typography className={classes.fullWidth} variant="h3">
+              <Typography
+                sx={{ ...styles.subheader, ...styles.fullWidth }}
+                variant="h3"
+              >
                 {subheader}
               </Typography>
             </Collapse>
-          </Grid>
-        )}
-        {text && (
-          <Grid items xs={6}>
-            <Typography className={classes.fullWidth} variant="h6">
-              {text}
-            </Typography>
           </Grid>
         )}
       </Grid>
