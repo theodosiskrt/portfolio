@@ -6,7 +6,7 @@ export const role = "Front end developer";
 export const aboutTitle = "About me";
 export const getAboutText = () => (
   <>
-    Hi! I am a 20-year-old passionate software developer from Greece who is
+    Hi! I am a 21-year-old passionate software developer from Greece who is
     interested in <br />
     <span className="shinyText">Front End Development</span>
     <br /> as well as <br />
